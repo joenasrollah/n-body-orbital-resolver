@@ -50,7 +50,9 @@ This repository models gravitational multi-body interactions across classical, c
 ### 4. Stellar Cluster Collapse & Dispersion (`06_stellar_cluster_evolution.py`)
 * Simulates $N=30$ equal-mass particles initialised with zero total momentum and zero centre-of-mass drift.
 * Incorporates a gravitational softening parameter ($\epsilon = 0.15$) to prevent force singularities during close stellar encounters:
-  $$\mathbf{a}_i = -G \sum_{j \neq i} \frac{m_j (\mathbf{r}_i - \mathbf{r}_j)}{(\vert{}\mathbf{r}_i - \mathbf{r}_j\vert{}^2 + \epsilon^2)^{3/2}}$$
+
+$$\mathbf{a}_i = -G \sum_{j \neq i} \frac{m_j (\mathbf{r}_i - \mathbf{r}_j)}{(|\mathbf{r}_i - \mathbf{r}_j|^2 + \epsilon^2)^{3/2}}$$
+
 * Compares sub-virial core collapse ($Q = 0.3$) against unbound energetic dispersion ($Q = 1.5$), tracking the median half-mass radius ($r_{1/2}$) and relative energy error under $10^{-6}$ tolerances.
 
 <p align="center">
