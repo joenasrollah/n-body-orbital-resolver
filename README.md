@@ -23,7 +23,7 @@ This repository models gravitational multi-body interactions across classical, c
 * Quantifies integration accuracy: tightening tolerances from $10^{-6}$ to $10^{-7}$ reduces accumulated relative energy error by over an order of magnitude ($\vert{}\Delta E\vert{} \le 3 \times 10^{-6}$).
 
 <p align="center">
-  <img src="figures/fig1_two_body_orbit.png" width="48%" />
+  <img src="figures/fig1_two_body_case.png" width="48%" />
   <img src="figures/fig2_energy_conservation.png" width="48%" />
 </p>
 
